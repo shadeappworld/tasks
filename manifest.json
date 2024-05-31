@@ -1,7 +1,7 @@
 {
-    "name": "Shade Music Plus",
-    "short_name": "Shade Music",
-    "description": "Shade Music Plus - It's a new way of music!",
+    "name": "Shade Task",
+    "short_name": "Tasks",
+    "description": "Your new todo list app!",
     "start_url": "index.html",
     "display": "standalone",
     "background_color": "#181c25",
