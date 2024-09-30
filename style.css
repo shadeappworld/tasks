@@ -141,7 +141,7 @@ body {
   }
   .todoList li {
     background: rgba(0, 128, 0, 0.05);
-    color: #333;
+    color: #000000;
   }
   .todoList li .icon {
     background: #ff3b30;
