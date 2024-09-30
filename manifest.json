@@ -1,16 +1,33 @@
 {
-    "name": "Shade Task",
-    "short_name": "Tasks",
-    "description": "Your new todo list app!",
-    "start_url": "index.html",
-    "display": "standalone",
-    "background_color": "#181c25",
-    "theme_color": "#181c25",
-    "icons": [
-        {
-            "src": "music.png",
-            "sizes": "192x192",
-            "type": "image/png"
-        }
-    ]
+  "name": "Shade Tasks",
+  "short_name": "Tasks",
+  "start_url": "index.html",
+  "scope": "./",
+  "icons": [
+    {
+      "src": "InShot_20240314_092405934.jpg",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "InShot_20240314_092405934.jpg",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#181c25",
+  "background_color": "#181c25",
+  "display": "standalone",
+  "description": "Do you want to take tasks like a pro? Then you need the new Shade Tasks app! It lets you create and store tasks with ease. You can also sort and view your tasks in different ways. Whether you need to jot down a shopping list, a memo, or a research project, this app has you covered. Don't miss this opportunity to simplify your life and boost your productivity.",
+  "orientation": "portrait",
+  "categories": [
+    "entertainment"
+  ],
+  "dir": "auto",
+  "iarc_rating_id": "e58c174a-81d2-5c3c-32cc-34b8de4a52e9",
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": 30
+  },
+  "lang": "en"
 }
