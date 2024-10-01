@@ -102,10 +102,22 @@ background-size: 100% 100%;
 		}
 </style>
   <style>
-    .todoList a {
-    color: white; /* Change the hyperlink color to white */
-    text-decoration: none; /* Remove the underline from the links */
+ /* Light mode */
+@media (prefers-color-scheme: light) {
+  .todoList a {
+    color: black; /* Dark text for light mode */
+    text-decoration: none;
   }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  .todoList a {
+    color: white; /* Light text for dark mode */
+    text-decoration: none;
+  }
+}
+
   .todoList a:hover {
     text-decoration: underline; /* Optional: Add underline on hover */
   }
