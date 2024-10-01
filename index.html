@@ -11,8 +11,99 @@
     gtag('config', 'G-J7373NT19P');
   </script>
   <style>
+  
+		.circle-popup {
+      position: fixed;
+      bottom: 0px;
+      left: 0px;
+      width: 100%;
+      height: 5%;
+      border-radius: 1px;
+      background-color: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      z-index: 9999;
+    }
+
+    .chat-icon {
+		position: fixed;
+      bottom: 0px;
+      left: 0px;
+      width: 100%;
+      height: 5%;
+      border-radius: 1px;
+      background-color: transparent;
+      backdrop-filter: blur(3px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      z-index: 9999;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.01);
+}
+.chat-icon::after {
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  transform: scale(1.4) translateZ(0);
+  filter: blur(25px);
+background: linear-gradient(to left, #4caf50, #388e3c, #2e7d32, #1565c0, #0d47a1);
+background-size: 100% 100%;
+  -webkit-animation: animateGlow 1.25s linear infinite;
+          animation: animateGlow 1.25s linear infinite;
+}
+
+@-webkit-keyframes animateGlow {
+  0% {
+    background-position: 200% 200%;
+  }
+  100% {
+    background-position: 200% 200%;
+  }
+}
+
+@keyframes animateGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}		.popup-content {
+		top: 35%;	border-radius: 4%;		z-index: 999; display: none; /* Initially hidden */ position: fixed;			left: 10%; width: 80%; height: 50%; background-color: grey; backdrop-filter: blur(5px); box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+		}
+	
+		.close-btn {
+		  position: fixed;
+		  bottom: 0px;
+		  left: 0px;
+		  width: 100%;
+		  height: 40px;
+		  border-radius: 0px;
+		  background-color: #264d29;
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  cursor: pointer;
+		  z-index: 9999;
+		}
+	
+		iframe {
+		  width: 100%;
+		  height: 100%;
+		  border-radius: 0%;
+		}
+</style>
+  <style>
     .todoList a {
-    color: black; /* Change the hyperlink color to white */
+    color: white; /* Change the hyperlink color to white */
     text-decoration: none; /* Remove the underline from the links */
   }
   .todoList a:hover {
@@ -128,7 +219,29 @@
   </script>
 
 
+  <div class="circle-popup">
+	<div class="chat-icon">📞</div>
+		<div class="popup-content">
+					  
+							<iframe id="popup-iframe" src="https://hume-evi-next-js-starter.vercel.app/" allowfullscreen="true" draggable="true" allow="camera; microphone"></iframe>
+								</div> 
+										 </div>
 
+										 <script>
+											// Get the necessary DOM elements
+												var circlePopup = document.querySelector('.circle-popup');
+													var popupContent = document.querySelector('.popup-content');
+														var closeBtn = document.querySelector('.close-btn');
+									  
+															// Function to toggle the popup
+																function togglePopup() {
+																	  popupContent.style.display = popupContent.style.display === 'block' ? 'none' : 'block';
+																		  }
+									  
+																			  // Add event listeners to the elements
+																				  circlePopup.addEventListener('click', togglePopup);
+																					  closeBtn.addEventListener('click', togglePopup);
+																							 </script>
 </body>
 
 </html>
