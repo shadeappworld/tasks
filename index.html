@@ -133,71 +133,8 @@ background-size: 10% 10%;
 </head>
 
 <body>
-  <div class="wrapper">
-    <header>Shade Task</header>
-    <div class="inputField">
-      <input type="text" placeholder="Add your new Todo">
-      <button><i class="fas fa-plus"></i></button>
-    </div>
-    <ul class="todoList">
-      <!-- data are comes from local storage -->
-    </ul>
-    <div class="footer">
-      <span>You have <span class="pendingTasks"></span> pending tasks</span>
-      <button>Clear All</button>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
-  
-  <script>
-    if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("./sw.js");
-    }
-  </script>
-
-  <script>
-    // Get the necessary DOM elements
-    var circlePopup = document.querySelector('.circle-popup');
-    var popupContent = document.querySelector('.popup-content');
-    var closeBtn = document.querySelector('.close-btn');
-
-    // Function to toggle the popup
-    function togglePopup() {
-      popupContent.style.display = popupContent.style.display === 'block' ? 'none' : 'block';
-    }
-
-    // Add event listeners to the elements
-    circlePopup.addEventListener('click', togglePopup);
-    closeBtn.addEventListener('click', togglePopup);
-  </script>
-
-
-  <div class="circle-popup">
-	<div class="chat-icon"><span class="material-symbols-outlined">
-call
-</span></div>
-		<div class="popup-content">
-					  
-							<iframe id="popup-iframe" src="https://hume-evi-next-js-starter.vercel.app/" allowfullscreen="true" draggable="true" allow="camera; microphone"></iframe>
-								</div> 
-										 </div>
-
-										 <script>
-											// Get the necessary DOM elements
-												var circlePopup = document.querySelector('.circle-popup');
-													var popupContent = document.querySelector('.popup-content');
-														var closeBtn = document.querySelector('.close-btn');
-									  
-															// Function to toggle the popup
-																function togglePopup() {
-																	  popupContent.style.display = popupContent.style.display === 'block' ? 'none' : 'block';
-																		  }
-									  
-																			  // Add event listeners to the elements
-																				  circlePopup.addEventListener('click', togglePopup);
-																					  closeBtn.addEventListener('click', togglePopup);
-																							 </script>
+	<script src="https://cdn.logwork.com/widget/countdown.js"></script>
+<a href="https://logwork.com/countdown-hrzy" class="countdown-timer" data-style="circles" data-timezone="Africa/Johannesburg" data-date="2024-11-02 00:00">Releasing Shade Task with Shade AI </a>
 </body>
 
 </html>
