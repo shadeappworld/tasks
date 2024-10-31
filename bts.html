@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">  
+    
+    <link rel="stylesheet" href="stylesforbts.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Iconscout Link For Icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- Theme included stylesheets --> <link href="//cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet"> <link href="//cdn.quilljs.com/1.3.6/quill.bubble.css" rel="stylesheet"> <!-- Core build with no theme, formatting, non-essential modules --> <link href="//cdn.quilljs.com/1.3.6/quill.core.css" rel="stylesheet"> <script src="//cdn.quilljs.com/1.3.6/quill.core.js"></script>
+<link rel="manifest" href="manifested.json" />
+    
+  </head>
+  <body>
+    <div class="popup-box">
+      <div class="popup">
+        <div class="content">
+          <header>
+            <p></p>
+            <i class="uil uil-times"></i>
+          </header>
+          <form action="#">
+            <div class="row title">
+              <label>Title</label>
+              <input type="text" spellcheck="true">
+            </div>
+            <div class="row description"><div id="froala"></div>
+              <label>💚 Description</label>
+              <textarea spellcheck="false"></textarea>
+            </div>
+            <button></button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <li class="add-box">
+        <div class="icon"><i class="uil uil-plus"></i></div>
+        <p>Hey bro, new note?</p>
+      </li>
+    </div>
+
+    <script src="script.js"></script>
+        <!-- Main Quill library --> <script src="//cdn.quilljs.com/1.3.6/quill.js"></script> <script src="//cdn.quilljs.com/1.3.6/quill.min.js"></script>
+    <script> var editor = new FroalaEditor('#froala'); </script>
+    <script>
+  if (typeof navigator.serviceWorker !== 'undefined') {
+    navigator.serviceWorker.register('sw.js')
+  }
+    </script>
+  </body>
+</html>

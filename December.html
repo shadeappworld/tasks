@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+   <title>Shade Notes Pro</title>
+   <link rel="canonical" href="https://simplepwa.com" />
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+   <!-- Icons and Colors -->
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#333333">
+<meta name="apple-mobile-web-app-title" content="Shade Notes">
+<meta name="application-name" content="Shade Notes">
+<meta name="msapplication-TileColor" content="#333333">
+<meta name="theme-color" content="#333333">
+   
+   <!-- SEO and Social Sharing and SEO -->
+    <!-- Iconscout Link For Icons -->
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4DRTK71398"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4DRTK71398');
+</script>
+    <style>
+    .circle-popup {
+      position: fixed;
+      bottom: 0px;
+      width: 100%;
+      left: 0%;
+      height: 5%;
+      border-radius: 0%;
+      background-color: #88ABFF;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      z-index: 9999;
+    }
+
+    .chat-icon {
+      position: fixed;
+      bottom: 1,5%;
+      }
+
+    .popup-content {
+      position: fixed;
+            top: 0px;
+            left: 0%;
+            right: 0%;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: none;
+            z-index: 99999;
+            border-radius: 0px;
+      
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      left: 50px;
+      right: 10px;
+      width: 20px;
+      height: 20px;
+      background-color: #e74c3c;
+      cursor: pointer;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border-radius: 0px;
+    }
+    #search-form {
+        left: 25%;
+        right: 25%;
+        height: 30px;
+        width: 50%;
+        -webkit-app-region: drag;
+      background: var(--back);
+  color: var(--text);
+  display: grid;
+  grid-template-rows: auto 1fr auto auto;
+    background-color: #ffbc5000;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    display: block;
+    flex-direction: row;
+    max-width: 100%;
+    justify-content: center;
+    position: relative;
+}
+
+#search-input {
+  left: 5px;
+        right: 5px;
+        height: 10%;
+        width: 100%;
+      background: var(--back);
+  color: var(--text);
+  display: box;
+  grid-template-rows: auto 1fr auto auto;
+    background-color: #ffbb50;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    display: sticky;
+    flex-direction: column;
+    justify-content: center;
+    position: sticky;
+}
+
+#search-input::placeholder {
+    color: #aaa;
+}
+
+#search-input:focus {
+    border: 2px solid #3498db;
+}
+
+#search-button {
+  left: 10px;
+        right: 10px;
+        height: 10%;
+        width: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto auto;
+    background-color: #3498db00;
+    color: #ffffff00;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    justify-content: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    left: 50%;
+    right: 50%;
+}
+
+#search-button:hover {
+    background-color: #2980b9;
+}
+
+#submit {
+  background-color: #ffbc5000;
+  display: none;
+}
+      </style>
+       <script src="editor.js"></script><script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@latest"></script>
+    <meta charset="utf-8">  
+    <title>The upcoming Shade Notes Pro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Iconscout Link For Icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+   <meta name="description" content="Simple Progressive Web App (PWA) template" />
+   <meta name="robots" content="noodp" />
+   <meta name="author" content="Nicole Furlan">
+   <meta name="keywords" content="progressive web app, progressive web application, pwa, pwa progressive web app, pwa progressive web application, progressive app, basic progressive web app, basic progressive web application, basic pwa, example progressive web app, example progressive web application, example pwa, progressive web app basic, progressive web app builder, progressive web app example, progressive web app sample, progressive web app template, sample progressive web app, sample progressive web application, sample pwa, free progressive web application template, progressive web application template, progressive web app template free, progressive web app template free download, progressive web app html template, progressive web app template github" />
+   <meta property="og:locale" content="en_US" />
+   <meta property="og:type" content="website" />
+   <meta property="og:title" content="Simple PWA" />
+   <meta property="og:description" content="Simple Progressive Web App (PWA) template" />
+   <meta property="og:url" content="https://simplepwa.com" />
+   <meta property="og:site_name" content="Simple PWA" />
+   <meta property="section:publisher" content="https://www.facebook.com/simplepwa/" />
+   <meta property="og:image" content="https://simplepwa.com/share.jpg" />
+   <meta name="twitter:card" content="summary_large_image" />
+   <meta name="twitter:title" content="Simple PWA" />
+   <meta name="twitter:description" content="Simple Progressive Web App (PWA) template" />
+   <meta name="twitter:site" content="@simplepwa" />
+   <meta name="twitter:image" content="https://simplepwa.com/share.jpg" />
+   <meta name="twitter:creator" content="@nicolemfurlan" />
+
+   <!-- Styles -->
+   <link rel="stylesheet" href="style.css">
+
+   <!-- Javscript -->
+   <script>
+       if ("serviceWorker" in navigator) {
+           window.addEventListener("load", () => {
+               navigator.serviceWorker && navigator.serviceWorker.register("./sw.js");
+           });
+       }
+   </script>
+   <script defer src="./main.js"></script>
+</head>
+
+<body>
+
+    <div class="popup-box">
+        <div class="popup">
+          <div class="content">
+            <header>
+              <p></p>
+              <i class="uil uil-times"></i>
+            </header>
+            <form action="#">
+              <div class="row title">
+                <label>Title</label>
+                <input type="text" spellcheck="true">
+              </div>
+              <div class="row description"><div id="froala-editor"></div>
+                <label>Description</label><div class="element"></div>
+                <textarea spellcheck="true" id="default-editor"></textarea>
+              </div>
+              <button></button>
+              <div id="froala"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper">
+        <li class="add-box">
+          <div class="icon"><i class="uil uil-plus"></i></div>
+          <p>Glad to see you.</p>
+        </li>
+      </div>
+  
+      <script src="script.js"></script>
+      <script>
+    if (typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('sw.js')
+    }
+      </script>
+       
+           <div class="circle-popup">
+      <div class="chat-icon"><i class="uil uil-angle-double-up"></i>Inline Magic</div>
+      <div class="popup-content">
+                
+        <iframe id="popup-iframe" src="https://shadeappworld.github.io/notes/beta.html" allowfullscreen="true"></iframe>
+      </div>
+           </div>
+                       
+         <script>
+      // Get the necessary DOM elements
+      var circlePopup = document.querySelector('.circle-popup');
+      var popupContent = document.querySelector('.popup-content');
+      var closeBtn = document.querySelector('.close-btn');
+  
+      // Function to toggle the popup
+      function togglePopup() {
+        popupContent.style.display = popupContent.style.display === 'block' ? 'none' : 'block';
+      }
+  
+      // Add event listeners to the elements
+      circlePopup.addEventListener('click', togglePopup);
+      closeBtn.addEventListener('click', togglePopup);
+         </script>
+   
+  </body>
+
+</html>
